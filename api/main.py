@@ -11,7 +11,8 @@ import matplotlib.pyplot as plt
 app = FastAPI()
 
 model = resnet18()
-model.load_state_dict(torch.load("model.pth", map_location=torch.device('cpu')))
+model.load_state_dict(torch.load("post_aug (4).pth", map_location=torch.device('cpu')))
+model.eval()
 
 @app.get("/")
 def read_root():
