@@ -9,22 +9,33 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#2c3e50"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.foodieapp",
+      "buildNumber": "1.0.0" 
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#3498db" 
+      },
+      "package": "com.yourcompany.foodieapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#2c3e50", 
+      "barStyle": "light-content"
+    },
+    "backgroundColor": "#ffffff",
+    "theme": {
+      "primaryColor": "#3498db", 
+      "backgroundColor": "#2c3e50",
+      "textColor": "#333333" 
     }
   }
 }
